@@ -1,0 +1,419 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Insta Profile</title>
+    <script
+      type="module"
+      src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"
+    ></script>
+    <script
+      nomodule
+      src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"
+    ></script>
+
+    <style>
+      body {
+        background-color: rgb(229, 185, 192);
+        /* display: flex; */
+        /* justify-content: center; */
+      }
+      marquee {
+            box-shadow: 0 1px 3px rgba(0, 0, 0, .1);
+            border: 1px solid rgba(0, 0, 0, .15);
+            background-color:rgb(240, 141, 182) ;
+            padding: 1px;
+        }
+      .parent {
+        display: flex;
+        justify-content: center;
+
+        border: 2px solid;
+        background-color: whitesmoke;
+
+        
+        margin: 20px 0px 0px 550px;
+
+        height: 495px;
+        width: 250px;
+        border-radius: 12px;
+      }
+      .time1 {
+        padding: 2px;
+        justify-content: center;
+        height: 20px;
+        width: 250px;
+        background-color: black;
+
+        border-top-left-radius: 10px;
+        border-top-right-radius: 10px;
+      }
+      .charger {
+        color: white;
+      }
+      .account {
+        margin: -10px 0px 0px 2px;
+        /* background-color: aqua; */
+      }
+      img {
+        border: 3px solid;
+        border-color: rgb(230, 62, 90);
+        margin: -10px 0px 0px 2px;
+        height: 50px;
+        width: 70px;
+        border-radius: 100px;
+      }
+      .propic {
+        display: flex;
+      }
+      .pff {
+        display: flex;
+      }
+      .button {
+        display: flex;
+        justify-content: space-around;
+        margin: -7px;
+      }
+      #size {
+        border-color: black;        
+        margin: 2px;
+        height: 30px;
+        width: 30px;
+      }
+      .stories {
+        display: flex;
+        justify-content: space-around;
+      }
+      .st {
+        display: grid;
+        /* margin: 10px; */
+      }
+      .s1 {
+        border: 2px solid;
+        height: 30px;
+        width: 30px;
+        border-radius: 50px;
+      }
+      #new-icon {
+        display: contents;
+        padding: 10px;
+        margin: 10px;
+      }
+      .menu {
+        display: flex;
+        justify-content: space-around;
+      }
+      .content {
+        /* border: 2px solid; */
+        background-image: radial-gradient(
+          ellipse,
+          indigo,
+          /* yellow, */
+          white,
+          black
+        );
+        margin: 10px;
+        height: 100px;
+        display: flex;
+        padding: 8px;
+        flex-wrap: wrap;
+        overflow-y: scroll;
+      }
+
+      .i {
+        /* border: 2px solid; */
+        height: 60px;
+        width: 60px;
+        /* background-color: aqua; */
+        text-align: center;
+      }
+      #size1 {
+        border-radius: 3px;
+        border-color: rgb(83, 176, 166);
+
+        margin: 1px;
+        height: 50px;
+        width: 50px;
+      }
+      .main-menu-bar{
+        display: flex;
+        justify-content: space-around;
+        margin: -2px;
+      }
+      .home{
+        display: flex;
+        justify-content: space-around;
+        background-color: black;
+        height: 25px;
+        /* width: 250px; */
+        margin: -9px -3px 20px -3px;
+
+        color: white;
+        border-bottom-left-radius: 10px;
+        border-bottom-right-radius: 10px;
+      }
+
+
+    </style>
+  </head>
+  <body>
+
+
+    <marquee width="" direction="" height="" behavior="scroll" scrollamount="20">
+        <h1 style="color: whitesmoke;">Instagram UI Using FlexBox </h1> 
+    </marquee>
+
+    <div class="parent">
+
+      <!-- Time Slap -->
+      <div class="time1">
+        <div class="charger">
+          &emsp;<time>9:15:00</time>&emsp;&emsp;&emsp;&emsp;
+          <small>3.5MB/s</small>
+          <ion-icon name="wifi-outline"></ion-icon>
+          <ion-icon name="airplane-outline"></ion-icon>
+          <ion-icon name="battery-full-outline"></ion-icon>
+        </div>
+
+        <!-- Account Navbar -->
+        <div class="account">
+          <h3>
+            shasha_45
+            <ion-icon name="chevron-down-outline"></ion-icon>
+            &emsp;&emsp;&emsp;
+            <ion-icon name="at-outline"></ion-icon>
+            <ion-icon name="add-circle-outline"></ion-icon>
+            <ion-icon name="menu-outline"></ion-icon>
+          </h3>
+        </div>
+
+        <!-- Profile Pic, followers, following -->
+        <div class="propic">
+          <img src="pawan Kalyan ji.jpg" alt="Profile Pic" />
+          &emsp;
+
+          <!-- pff refers to Posts, Followers,  Following -->
+          <div class="pff">
+            <div>
+              <div class="text">
+                <strong>270</strong>
+                <small>&emsp;Posts</small>
+              </div>
+            </div>
+            <div class="text">
+              <strong>&emsp;2M</strong>
+              <small>followers</small>
+            </div>
+            <div class="text">
+              <strong>&emsp;99</strong>
+              <small>following</small>
+            </div>
+          </div>
+        </div>
+        <div class="bio">
+          <small>
+            <strong>&emsp;ShashaVali</strong><br />
+            Love to play Cricket &#127951;<br />
+            <!-- Champion &#127942;<br> -->
+            Tiger Ka Hukum &#129311;
+          </small>
+        </div>
+        <br />
+
+        <!-- Edit Profile, Share profile & one icon Buttons  -->
+        <div class="button">
+            <div>
+                <button style="color: white; background-color: rgb(11, 39, 72) ;">Follow</button>
+              </div>
+          <div>
+            <button style="color: white; background-color: rgb(81, 79, 79);">Message</button>
+          </div>
+          <div>
+            <button style="color: white; background-color: rgb(81, 79, 79);">Email</button>
+          </div>
+          <div>
+            <button style="color: white; background-color: rgb(81, 79, 79);">
+              <ion-icon name="person-add-sharp"></ion-icon>
+            </button>
+          </div>
+        </div>
+        <br />
+
+        <!-- Stories of Instagram -->
+        <div class="stories">
+          <div class="st">
+            <img src="hardik.jpeg" alt="" id="size" />
+            <small>Hardik</small>
+          </div>
+          <div class="st">
+            <img src="virat.jpg" alt="" id="size" />
+            <small>Virat</small>
+          </div>
+          <div class="st">
+            <img src="rohit.jpg" alt="" id="size" />
+            <small>Rohit</small>
+          </div>
+          <div class="st s1">
+            <ion-icon name="add-circle-sharp" id="new-icon"></ion-icon>
+            <small>New</small>
+          </div>
+        </div><br>
+
+        <!-- Menu Bar -->
+        <div class="menu">
+          <ion-icon name="apps-sharp"></ion-icon>
+          <ion-icon name="images"></ion-icon>
+          <ion-icon name="person"></ion-icon>
+        </div>
+        <hr />
+
+        <!-- Pics and Reels -->
+        <div class="content">
+          <!-- 1st 20 -->
+          <div class="i">
+            <img src="dhoni.jpeg" alt="" id="size1" />
+          </div>
+          <div class="i">
+            <img src="bumrah.jpg" alt="" id="size1" />
+          </div>
+          <div class="i">
+            <img
+              src="hardik.jpeg"
+              id="size1"
+              alt=""
+            />
+          </div>
+          <div class="i">
+            <img src="IPL.jpg" id="size1" alt="" />
+          </div>
+          <div class="i">
+            <img
+              src="bhag.jpg"
+              id="size1"
+              alt=""
+            />
+          </div>
+          <div class="i">
+            <img
+              src="bro.jpg"
+              id="size1"
+              alt=""
+            />
+          </div>
+          <div class="i">
+            <img
+              src="dangal.jpg"
+              id="size1"
+              alt=""
+            />
+          </div>
+          <div class="i">
+            <img
+              src="darling.jpg"
+              id="size1"
+              alt=""
+            />
+          </div>
+          <div class="i">
+            <img
+              src="kalki.jpg"
+              id="size1"
+              alt=""
+            />
+          </div>
+          <div class="i">
+            <img
+              src="maharaja.jpg"
+              id="size1"
+              alt=""
+            />
+          </div>
+          <div class="i">
+            <img
+              src="ms.jpg"
+              id="size1"
+              alt=""
+            />
+          </div>
+          <div class="i">
+            <img
+              src="pawan.jpg"
+              id="size1"
+              alt=""
+            />
+          </div>
+          <div class="i">
+            <img
+              src="RRR.webp"
+              id="size1"
+              alt=""
+            />
+          </div>
+          <div class="i">
+            <img
+              src="veera.jpg"
+              id="size1"
+              alt=""
+            />
+          </div>
+          <div class="i">
+            <img src="ODI.jpg" id="size1" alt="" />
+          </div>
+          <div class="i">
+            <img src="virat.jpg" id="size1" alt="" />
+          </div>
+          <div class="i">
+            <img src="rohit.jpg" id="size1" alt="" />
+          </div>
+          <div class="i">
+            <img src="shami.jpg" id="size1" alt="" />
+          </div>
+          <div class="i">
+            <img
+              src="tajmahal.jpeg"
+              id="size1"
+              alt=""
+            />
+          </div>
+          <div class="i">
+            <img src="T20.jpg" id="size1" alt="" />
+          </div>
+        </div>
+        <!-- <hr> -->
+
+        <div class="main-menu-bar">
+            <ion-icon name="home-outline"></ion-icon>
+            <ion-icon name="search-sharp"></ion-icon>
+            <ion-icon name="add-circle-outline"></ion-icon>
+            <ion-icon name="images-outline"></ion-icon>
+            <ion-icon name="person-sharp"></ion-icon>
+        </div><br>
+
+        <div class="home">
+            <ion-icon name="menu-sharp"></ion-icon>
+            <ion-icon name="stop-outline"></ion-icon>
+            <ion-icon name="caret-back-outline"></ion-icon>
+
+
+
+        </div>
+
+
+
+      </div>
+    </div>
+  </body>
+</html>
+
+<!-- <div class="Account">
+    <p>
+        <h3>Shasha_45 
+            <ion-icon name="chevron-down-outline"></ion-icon> 
+            &emsp;&emsp;&emsp;&emsp;&emsp; 
+            <ion-icon name="at-outline"></ion-icon>  
+            <ion-icon name="add-circle-outline"></ion-icon> 
+            <ion-icon name="menu-outline"></ion-icon> 
+        </h3>  
+    </p>
+</div> -->
